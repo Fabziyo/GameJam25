@@ -60,17 +60,17 @@ public class Player : MonoBehaviour
         jumpAction = inputActions.FindAction("Jump");
         interactAction = inputActions.FindAction("Interact");
 
-        pausePlayerAction = inputActions.FindActionMap("Player").FindAction("Pause");
-        pauseUIAction = inputActions.FindActionMap("UI").FindAction("Pause");
+        //pausePlayerAction = inputActions.FindActionMap("Player").FindAction("Pause");
+        //pauseUIAction = inputActions.FindActionMap("UI").FindAction("Pause");
 
         //Events
         jumpAction.performed += Jump;
         interactAction.started += InteractPressed;
-        pausePlayerAction.performed += TogglePause;
-        pauseUIAction.performed += TogglePause;
+        //pausePlayerAction.performed += TogglePause;
+        //pauseUIAction.performed += TogglePause;
     }
 
-    public void TogglePause(InputAction.CallbackContext context)
+    /*public void TogglePause(InputAction.CallbackContext context)
     {
         if (Time.timeScale == 0f)
             OnUnpause();
@@ -101,14 +101,14 @@ public class Player : MonoBehaviour
         inputActions.FindActionMap("UI").Enable();
         inputActions.FindActionMap("Player").Enable();
 
-    }
+    }*/
 
     void OnDestroy()
     {
         jumpAction.performed -= Jump;
         interactAction.started -= InteractPressed;
-        pausePlayerAction.performed -= TogglePause;
-        pauseUIAction.performed -= TogglePause;
+        //pausePlayerAction.performed -= TogglePause;
+        //pauseUIAction.performed -= TogglePause;
     }
 
     //Input

@@ -2086,7 +2086,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSelect: {fileID: 2010192051}
   back: {fileID: 780412410}
-  menu: {fileID: 1263092639}
   startMenu: {fileID: 1889355221}
 --- !u!114 &780412410
 MonoBehaviour:
@@ -5369,7 +5368,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSelect: {fileID: 1044221893}
   back: {fileID: 1886033466}
-  menu: {fileID: 2060643269}
   startMenu: {fileID: 1889355221}
 --- !u!114 &1886033465
 MonoBehaviour:
