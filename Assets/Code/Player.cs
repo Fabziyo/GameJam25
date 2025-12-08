@@ -98,8 +98,9 @@ public class Player : MonoBehaviour
         option_Panel.SetActive(false);
 
         //Player Actions wieder aktivieren
-        inputActions.FindActionMap("Player").Enable();
         inputActions.FindActionMap("UI").Enable();
+        inputActions.FindActionMap("Player").Enable();
+
     }
 
     void OnDestroy()
