@@ -3434,7 +3434,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1242008546}
+      - m_Target: {fileID: 362444406}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -3498,7 +3498,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSelect: {fileID: 350639690}
   back: {fileID: 856596807}
-  menu: {fileID: 362444406}
   startMenu: {fileID: 851138154}
 --- !u!1 &914007708
 GameObject:
@@ -5113,7 +5112,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 180092571}
+      - m_Target: {fileID: 1565751210}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -5177,7 +5176,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSelect: {fileID: 1977712678}
   back: {fileID: 1227728531}
-  menu: {fileID: 1565751210}
   startMenu: {fileID: 851138154}
 --- !u!1 &1242008546
 GameObject:
@@ -7086,7 +7084,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1764648090}
+      - m_Target: {fileID: 604362312}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -7150,7 +7148,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSelect: {fileID: 2137006383}
   back: {fileID: 2096030763}
-  menu: {fileID: 604362312}
   startMenu: {fileID: 851138154}
 --- !u!1 &2137006383
 GameObject:
