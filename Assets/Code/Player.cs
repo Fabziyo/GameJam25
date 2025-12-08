@@ -122,6 +122,7 @@ public class Player : MonoBehaviour
         //Bewegung
         Vector2 movement = moveAction.ReadValue<Vector2>();
         moveInput = movement.x;
+        //moveInput = 1f;
 
         // Ducken mit Input-Methode
         if (UnityEngine.Input.GetKey(KeyCode.LeftControl))
