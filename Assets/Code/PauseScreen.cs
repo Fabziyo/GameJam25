@@ -15,11 +15,8 @@ public class PauseScreen : MonoBehaviour
     public GameObject panel;
     public GameObject settingsPanel;
     public GameObject controlsPanel;
-
-    public GameObject dialogPanel;
-
+    
     public PlayerInput input;
-    public GameObject continueButton;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,11 +32,13 @@ public class PauseScreen : MonoBehaviour
         {
             settingsPanel.SetActive(true);
             controlsPanel.SetActive(false);
+            panel.SetActive(false);
         });
         controlsButton.onClick.AddListener(() =>
         {
             settingsPanel.SetActive(false);
             controlsPanel.SetActive(true);
+            panel.SetActive(false);
         });
         resumeButton.onClick.AddListener(OnUnpause);
 
@@ -67,16 +66,10 @@ public class PauseScreen : MonoBehaviour
     void OnUnpause()
     {
         Time.timeScale = 1f;
-        if (dialogPanel.activeSelf == false)
-        {
-            input.SwitchCurrentActionMap("Player");
-            Cursor.visible = false;
-        }
-        {EventSystem.current.SetSelectedGameObject(continueButton);}
+        input.SwitchCurrentActionMap("Player");
+        Cursor.visible = false;
         panel.SetActive(false);
         settingsPanel.SetActive(false);
         controlsPanel.SetActive(false);
-        
-        
     }
 }
