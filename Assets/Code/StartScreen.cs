@@ -14,6 +14,7 @@ public class StartScreen : MonoBehaviour
     public GameObject settingsMenu;
     public GameObject creditsMenu;
     public GameObject controlsMenu;
+    public GameObject StartMenu;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,7 +22,7 @@ public class StartScreen : MonoBehaviour
         Time.timeScale = 1;
         startButton.onClick.AddListener(() =>
         {
-            SceneManager.LoadScene("Intro");
+            SceneManager.LoadScene("SampleScene");
             //AudioSystem.instance.musicEmitter.EventInstance.setParameterByNameWithLabel("LevelSwitch2", "Ingame-1");   FMOD level music switch
         });
         
@@ -30,18 +31,21 @@ public class StartScreen : MonoBehaviour
             settingsMenu.SetActive(true);
             creditsMenu.SetActive(false);
             controlsMenu.SetActive(false);
+            StartMenu.SetActive(false);
         });
         creditsButton.onClick.AddListener(() =>
         {
             creditsMenu.SetActive(true);
             settingsMenu.SetActive(false);
             controlsMenu.SetActive(false);
+            StartMenu.SetActive(false);
         });
         controlButton.onClick.AddListener(() =>
         {
             controlsMenu.SetActive(true);
             creditsMenu.SetActive(false);
             settingsMenu.SetActive(false);
+            StartMenu.SetActive(false);
         });
         quitButton.onClick.AddListener(() => Application.Quit());
         
