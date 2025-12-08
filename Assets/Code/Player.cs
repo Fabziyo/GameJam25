@@ -36,6 +36,9 @@ public class Player : MonoBehaviour
     public LayerMask whatIsGround;
     public BoxCollider2D bodyCollider;
 
+    public int maxJumps = 1;
+    private int jumpsRemaining;
+
     [Header("Object")]
     public GameObject paused_Panel;
     public GameObject option_Panel;
@@ -138,8 +141,13 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         //Bodencheck
-        wasGrounded = isGrounded;
+        
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+
+        if (!wasGrounded && isGrounded)
+        {
+            jumpsRemaining = maxJumps;
+        }
 
         //Bewegung
         float speed = isCrouching ? moveSpeed * 0.5f : moveSpeed;
@@ -148,10 +156,11 @@ public class Player : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext ctx)
     {
-        if (isGrounded)
-            return;
-
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        if (jumpsRemaining > 0)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            jumpsRemaining--;
+        }
     }
 
     //Trigger 2D
