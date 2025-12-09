@@ -16,22 +16,30 @@ public class GroundSpawner : MonoBehaviour
     public float gridSizeY = 4f;   
     public LayerMask groundLayer = 1;  
 
-    public bool spawning = true;
-    public float worldY;
+    private bool spawning = true;
+    private float nextSpawnX;  
 
     void Start()
     {
+        
+        //nextSpawnX = transform.position.x;
+
         
         InvokeRepeating("SpawnGround", 1f, spawnRate);
     }
 
     void SpawnGround()
     {
-        if (!spawning || player == null) return;
+        if (!spawning) return;
 
         
-        Vector3 playerGridPos = GetGridPosition(player.position);
-        Vector3 nextSpawnGridPos = new Vector3(playerGridPos.x + gridSizeX, playerGridPos.y, 0);
+        Vector3 nextSpawnGridPos = new Vector3(nextSpawnX, transform.position.y, 0);
+
+        
+        if (player != null)
+        {
+            nextSpawnGridPos.x = Mathf.Max(nextSpawnGridPos.x, player.position.x + 15f);
+        }
 
         
         if (IsGridPositionFree(nextSpawnGridPos))
@@ -46,15 +54,15 @@ public class GroundSpawner : MonoBehaviour
             
             int randomIndex = Random.Range(0, GroundPrefab.Length);
             Instantiate(GroundPrefab[randomIndex], spawnPos, Quaternion.identity);
-        }
-    }
 
-    Vector3 GetGridPosition(Vector3 worldPos)
-    {
-        
-        float gridX = Mathf.Floor(worldPos.x / gridSizeX) * gridSizeX;
-        float gridY = Mathf.Round(worldY / gridSizeY) * gridSizeY;
-        return new Vector3(gridX, gridY, 0);
+            
+            nextSpawnX += gridSizeX;
+        }
+        else
+        {
+            
+            nextSpawnX += gridSizeX;
+        }
     }
 
     bool IsGridPositionFree(Vector3 gridPos)
