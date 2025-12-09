@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using Unity.Cinemachine;
+using UnityEngine.Audio;
 
 public class Player : MonoBehaviour
 {
@@ -45,9 +46,19 @@ public class Player : MonoBehaviour
     public CinemachineInputAxisController cinemachineController;
     public Interactable currentInteractable;
 
+    //[Header("Audio")]
+    //public AudioMixerGroup SFX;
+    //public AudioSource audioSource;
+    //public AudioClip SFX_Jump_OldMan_003;
+    
+
     void Start()
     {
         Time.timeScale = 1f;
+
+        //audioSource = GetComponent<AudioSource>();
+        //if (SFX_Jump_OldMan_003 != null)
+            //audioSource.PlayOneShot(SFX_Jump_OldMan_003, 0.7f);
 
         originalHeight = bodyCollider.size.y;
 
