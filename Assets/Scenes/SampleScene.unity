@@ -1025,6 +1025,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51725d9e436945d45a19a0584c8efd07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LeaderboardUi: {fileID: 817347704}
+  LeaderboardManager: {fileID: 1221977859}
 --- !u!61 &204719470
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4194,7 +4196,7 @@ Transform:
   m_GameObject: {fileID: 889961898}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.95, y: 1.72, z: 0}
+  m_LocalPosition: {x: 18, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4272,9 +4274,11 @@ MonoBehaviour:
   - {fileID: 5605330081571847191, guid: a6d81192c13a84f41b4bd07b2aac394c, type: 3}
   - {fileID: 8560310356853362250, guid: d6c6f4f4e60972749a5394ce1de58c1b, type: 3}
   spawnRate: 4.5
-  yMin: 1
-  yMax: 11
+  yMin: 2
+  yMax: 8
   player: {fileID: 204719468}
+  enemyTag: Enemy
+  destroyDistance: 8
 --- !u!1 &902283498
 GameObject:
   m_ObjectHideFlags: 0
@@ -11494,7 +11498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 0}
+  m_AnchoredPosition: {x: 1.5, y: 0}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2028363879
@@ -11515,15 +11519,17 @@ MonoBehaviour:
   - {fileID: 669882543}
   - {fileID: 1028272422}
   - {fileID: 1296455655}
-  spawnRate: 0.75
-  yMin: -2
-  yMax: 2.5
+  spawnRate: 0.7
+  yMin: -1
+  yMax: 1
   player: {fileID: 204719468}
   gridSizeX: 2
   gridSizeY: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  groundTag: Ground
+  destroyDistance: 10
 --- !u!212 &2028363880
 SpriteRenderer:
   m_ObjectHideFlags: 0

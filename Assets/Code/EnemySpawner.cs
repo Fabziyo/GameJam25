@@ -6,36 +6,57 @@ public class EnemySpawner : MonoBehaviour
     public GameObject[] enemyPrefab;
 
     [Header("Spawn Einstellungen")]
-    public float spawnRate = 2f;      
-    public float yMin = -2f;          
-    public float yMax = 2f;           
-    public Transform player;          
+    public float spawnRate = 2f;
+    public float yMin = -2f;
+    public float yMax = 2f;
+    public Transform player;
+
+    [Header("Cleanup Einstellungen")]
+    public string enemyTag = "Enemy";
+    public float destroyDistance = 5f;
 
     private bool spawning = true;
 
     void Start()
     {
-        //Spawn-Loop
-        InvokeRepeating("SpawnEnemy", 1f, spawnRate);
+        InvokeRepeating(nameof(SpawnEnemy), 1f, spawnRate);
+    }
+
+    void Update()
+    {
+        if (player == null) return;
+
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
+        float playerX = player.position.x;
+
+        foreach (GameObject enemy in enemies)
+        {
+            if (enemy == null) continue;
+
+            if (enemy.transform.position.x < playerX - destroyDistance)
+            {
+                Destroy(enemy);
+            }
+        }
     }
 
     void SpawnEnemy()
     {
-        if (!spawning) return;
+        if (!spawning || player == null) return;
+       
+        float randomOffsetY = Random.Range(yMin, yMax);
 
-        //Zufällige Position
-        float randomY = Random.Range(yMin, yMax);
-        Vector3 spawnPos = new Vector3(transform.position.x, randomY, 0);
+        Vector3 spawnPos = new Vector3(
+            player.position.x + 15f,         
+            player.position.y + randomOffsetY,
+            0f
+        );
 
-        
-        if (player != null)
-            spawnPos.x = player.position.x + 15f;
-
-        //random Enemy
-        int randomIndex = Random.Range(0, enemyPrefab.Length);
+        int randomIndex = Random.Range(0, enemyPrefab.Length); 
         Instantiate(enemyPrefab[randomIndex], spawnPos, Quaternion.identity);
     }
-
-    
-    public void StopSpawning() { spawning = false; }
+    public void StopSpawning()
+    {
+        spawning = false;
+    }
 }

@@ -9,6 +9,7 @@ TagManager:
   - Platform
   - Killbox
   - counter
+  - Ground
   layers:
   - Default
   - TransparentFX
