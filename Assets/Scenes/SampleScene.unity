@@ -3387,7 +3387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &889961899
 Transform:
   m_ObjectHideFlags: 0
@@ -7269,10 +7269,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GroundPrefab:
   - {fileID: 5856402290547647775, guid: 38de807de6767454c98866d95ac457eb, type: 3}
-  spawnRate: 3
+  spawnRate: 1
   yMin: 0
   yMax: 0
   player: {fileID: 204719468}
+  gridSizeX: 20
+  gridSizeY: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  spawning: 1
+  worldY: 0
 --- !u!212 &2028363880
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7636,7 +7643,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5132926998976906743, guid: 38de807de6767454c98866d95ac457eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.27
+      value: 17.073023
       objectReference: {fileID: 0}
     - target: {fileID: 5132926998976906743, guid: 38de807de6767454c98866d95ac457eb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7677,6 +7684,10 @@ PrefabInstance:
     - target: {fileID: 5856402290547647775, guid: 38de807de6767454c98866d95ac457eb, type: 3}
       propertyPath: m_Name
       value: Ground_Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856402290547647775, guid: 38de807de6767454c98866d95ac457eb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
