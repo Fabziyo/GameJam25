@@ -1,4 +1,3 @@
-//using FMODUnity;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Processors;
@@ -28,10 +27,10 @@ public class SettingsScreen : MonoBehaviour
         music.onValueChanged.AddListener((newValue) =>
         {
             PlayerPrefs.SetFloat("MusicVolume", newValue);
-           // RuntimeManager.GetVCA("vca:/Music").setVolume(music.value);
+            //RuntimeManager.GetVCA("vca:/Music").setVolume(music.value);
         });
         music.value = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
-       // RuntimeManager.GetVCA("vca:/Music").setVolume(music.value);
+        //RuntimeManager.GetVCA("vca:/Music").setVolume(music.value);
         
         effects.onValueChanged.AddListener((newValue) =>
         {

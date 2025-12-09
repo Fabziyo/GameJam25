@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using Unity.Cinemachine;
-using UnityEngine.Audio;
 
 public class Player : MonoBehaviour
 {
@@ -173,6 +172,7 @@ public class Player : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             jumpsRemaining--;
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_Jump_OldMan");
         }
     }
 
