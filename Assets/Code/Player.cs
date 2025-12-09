@@ -189,6 +189,7 @@ public class Player : MonoBehaviour
         {
             score += 1;
             playerScore.text = score.ToString();
+            Debug.Log(other.name);
         }
         else
         {
