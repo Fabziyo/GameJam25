@@ -33,9 +33,13 @@ public class Leaderboard : MonoBehaviour
 
     public void SetLeaderboardEntry(string username, int score)
     {
+        
+        
+        Debug.Log("name" + username);
         LeaderboardCreator.UploadNewEntry(publicLeaderboardKey, username, score, ((msg) =>
-        {
-            GetLeaderboard();
+        { GetLeaderboard();
         }));
+        
+        
     }
 }

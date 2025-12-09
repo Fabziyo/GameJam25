@@ -4,14 +4,23 @@ using UnityEngine.Events;
 
 public class ScoreManager : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI inputScore;
+    public TextMeshProUGUI inputScore;
     
     //public static TextMeshProUGUI inputScore;
-    [SerializeField] private TextMeshProUGUI inputName;
+    public TextMeshProUGUI inputName;
 
     public UnityEvent<string, int> submitScoreEvent;
     public void SubmitScore()
     {
-        submitScoreEvent.Invoke(inputName.text, int.Parse(inputScore.text));
+        if (!string.IsNullOrEmpty(inputName.text))
+        {
+            if (!string.IsNullOrWhiteSpace(inputName.text))
+            {
+                submitScoreEvent.Invoke(inputName.text, int.Parse(inputScore.text));
+            }
+        }
+        
+            
+        
     }
 }
