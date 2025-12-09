@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using Unity.Cinemachine;
 
@@ -44,6 +45,10 @@ public class Player : MonoBehaviour
     public GameObject option_Panel;
     public CinemachineInputAxisController cinemachineController;
     public Interactable currentInteractable;
+    
+    [Header("ScoreCounter")]
+    public TextMeshProUGUI playerScore;
+    private int score;
 
     //[Header("Audio")]
     //public AudioMixerGroup SFX;
@@ -78,6 +83,7 @@ public class Player : MonoBehaviour
         interactAction.started += InteractPressed;
         //pausePlayerAction.performed += TogglePause;
         //pauseUIAction.performed += TogglePause;
+        score = 0;
     }
 
     /*public void TogglePause(InputAction.CallbackContext context)
@@ -179,9 +185,18 @@ public class Player : MonoBehaviour
     //Trigger 2D
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Interactable inter = other.GetComponent<Interactable>();
-        if (inter != null)
-            currentInteractable = inter;
+        if (other.CompareTag("counter"))
+        {
+            score += 1;
+            playerScore.text = score.ToString();
+        }
+        else
+        {
+            Interactable inter = other.GetComponent<Interactable>();
+            if (inter != null)
+                currentInteractable = inter; 
+        }
+        
     }
 
     public void OnTriggerExit2D(Collider2D other)
