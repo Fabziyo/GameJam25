@@ -13,7 +13,8 @@ namespace LeaderboardCreatorDemo
 // ------------------------------------------------------------
         [SerializeField] private TextMeshProUGUI _gameJamScore;
         
-        private int Score => int.Parse(_gameJamScore.text);
+        //private int Score => int.Parse(_gameJamScore.text);
+        private int Score => Player.score;
 // ------------------------------------------------------------
 
         private void Start()

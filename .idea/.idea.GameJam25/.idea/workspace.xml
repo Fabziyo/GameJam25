@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7bdcc13-a0d4-4f25-a90a-b60a962834a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/LeaderboardUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/LeaderboardUI.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam25/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam25/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/LeaderboardManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/LeaderboardManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CanvasLevel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/CanvasLevel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CanvasMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/CanvasMenu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +144,7 @@
       <workItem from="1765372577176" duration="5344000" />
       <workItem from="1765381413057" duration="470000" />
       <workItem from="1765381958181" duration="33000" />
+      <workItem from="1765382712325" duration="712000" />
     </task>
     <servers />
   </component>

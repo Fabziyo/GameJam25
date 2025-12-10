@@ -195,7 +195,7 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("counter"))
         {
-            score += 1;
+            score += 5;
             playerScore.text = score.ToString();
             Debug.Log(other.name);
         }
