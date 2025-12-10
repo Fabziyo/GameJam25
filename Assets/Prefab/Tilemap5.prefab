@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 253359329155005684}
   - component: {fileID: 1772120816063720847}
   - component: {fileID: 817611785875837134}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Square
   m_TagString: counter
   m_Icon: {fileID: 0}
