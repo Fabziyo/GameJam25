@@ -4875,7 +4875,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: Enter Name...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9472,6 +9472,7 @@ GameObject:
   - component: {fileID: 8395157934102733355}
   - component: {fileID: 479922335647599659}
   - component: {fileID: 3723620291814004458}
+  - component: {fileID: 8684414205727446481}
   m_Layer: 5
   m_Name: Leaderboard-UI (1)
   m_TagString: Untagged
@@ -9608,6 +9609,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &8684414205727446481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8769507229118556080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1556f4b2347dd7740a7f810ce713ab71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreText: {fileID: 448214200712892228}
 --- !u!1 &8864693498163687647
 GameObject:
   m_ObjectHideFlags: 0

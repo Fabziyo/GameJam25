@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
     
     [Header("ScoreCounter")]
     public TextMeshProUGUI playerScore;
-    private int score;
+    public static int score;
 
     //[Header("Audio")]
     //public AudioMixerGroup SFX;
