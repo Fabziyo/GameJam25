@@ -3282,6 +3282,14 @@ PrefabInstance:
       propertyPath: LeaderboardManager
       value: 
       objectReference: {fileID: 1221977859}
+    - target: {fileID: 1301887311442955998, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: m_CallbackLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301887311442955998, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: m_ContactCaptureLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2715933623400892392, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3400,7 +3408,7 @@ PrefabInstance:
       objectReference: {fileID: 363048969}
     - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: crouchHeight
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: option_Panel
@@ -3413,6 +3421,14 @@ PrefabInstance:
     - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: originalHeight
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685266222075928399, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: m_CallbackLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685266222075928399, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: m_ContactCaptureLayers.m_Bits
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
