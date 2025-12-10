@@ -23,7 +23,7 @@ public class StartScreen : MonoBehaviour
         startButton.onClick.AddListener(() =>
         {
             SceneManager.LoadScene("SampleScene");
-            //AudioSystem.instance.musicEmitter.EventInstance.setParameterByNameWithLabel("LevelSwitch2", "Ingame-1");   FMOD level music switch
+            //AudioSystem.instance.musicEmitter.EventInstance.setParameterByNameWithLabel("LevelSwitch2", "Ingame-1");
         });
         
         settingsButton.onClick.AddListener(() =>

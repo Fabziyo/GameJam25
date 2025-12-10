@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b7bdcc13-a0d4-4f25-a90a-b60a962834a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam25/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam25/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/StartScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/StartScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EndScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EndScreen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +138,7 @@
       <workItem from="1765299997055" duration="976000" />
       <workItem from="1765301024956" duration="1281000" />
       <workItem from="1765302823545" duration="462000" />
+      <workItem from="1765370325411" duration="882000" />
     </task>
     <servers />
   </component>
