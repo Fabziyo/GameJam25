@@ -18,7 +18,7 @@ public class GroundSpawner : MonoBehaviour
 
     [Header("Cleanup Einstellungen")]
     public string groundTag = "Ground";   
-    public float destroyDistance = 10f;   
+    public float destroyDistance = 10f;
 
     private bool spawning = true;
     private float nextSpawnX;
@@ -43,6 +43,7 @@ public class GroundSpawner : MonoBehaviour
             if (ground.transform.position.x < playerX - destroyDistance)
             {
                 Destroy(ground);
+                
             }
         }
     }
