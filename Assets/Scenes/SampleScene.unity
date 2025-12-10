@@ -609,7 +609,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8699999, y: 0.8, z: -10}
+  m_LocalPosition: {x: -0.3699999, y: 0.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -693,6 +693,11 @@ Transform:
   - {fileID: 84841295}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &570247201 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9221921187742965484, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+  m_PrefabInstance: {fileID: 1831109780172132459}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,7 +1683,7 @@ Transform:
   m_GameObject: {fileID: 1184427227}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8699999, y: 0.8, z: -10}
+  m_LocalPosition: {x: -0.3699999, y: 0.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2853,7 +2858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2715933623400892392, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -6.87
+      value: -6.37
       objectReference: {fileID: 0}
     - target: {fileID: 2715933623400892392, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2888,9 +2893,17 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 570247201}
+    - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: playerScore
       value: 
       objectReference: {fileID: 363048969}
+    - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: crouchHeight
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: option_Panel
       value: 
@@ -2899,6 +2912,10 @@ PrefabInstance:
       propertyPath: paused_Panel
       value: 
       objectReference: {fileID: 1889355221}
+    - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: originalHeight
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

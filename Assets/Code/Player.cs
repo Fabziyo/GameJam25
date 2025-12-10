@@ -170,6 +170,8 @@ public class Player : MonoBehaviour
         //Bewegung
         float speed = isCrouching ? moveSpeed * 0.5f : moveSpeed;
         rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
+
+        
     }
 
     public void Jump(InputAction.CallbackContext ctx)
@@ -179,6 +181,7 @@ public class Player : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             jumpsRemaining--;
             //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_Jump_OldMan");
+            
         }
     }
 
