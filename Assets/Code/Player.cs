@@ -1,7 +1,8 @@
 ﻿using TMPro;
+using Unity.Cinemachine;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Unity.Cinemachine;
 
 public class Player : MonoBehaviour
 {
@@ -11,11 +12,12 @@ public class Player : MonoBehaviour
     public InputAction moveAction;
     public InputAction jumpAction;
     public InputAction interactAction;
+    public InputAction attackAction;
     public InputAction pausePlayerAction;
     public InputAction pauseUIAction;
 
     [Header("Player")]
-    
+
     public Animator animator;
     public Rigidbody2D rb;
 
@@ -24,6 +26,13 @@ public class Player : MonoBehaviour
     public float groundCheckRadius = 0.1f;
     public float crouchHeight = 1f;
 
+    [Header("Attack")]
+    public Transform attackPoint; 
+    public float attackRange = 1.5f;
+    public LayerMask enemyLayers;
+    public string enemyTag = "Enemy";
+
+    [Header("Jump")]
     public bool isGrounded;
     public bool canJump;
     public bool wasGrounded;
@@ -45,24 +54,14 @@ public class Player : MonoBehaviour
     public GameObject option_Panel;
     public CinemachineInputAxisController cinemachineController;
     public Interactable currentInteractable;
-    
+
     [Header("ScoreCounter")]
     public TextMeshProUGUI playerScore;
     public static int score;
 
-    //[Header("Audio")]
-    //public AudioMixerGroup SFX;
-    //public AudioSource audioSource;
-    //public AudioClip SFX_Jump_OldMan_003;
-    
-
     void Start()
     {
         Time.timeScale = 1f;
-
-        //audioSource = GetComponent<AudioSource>();
-        //if (SFX_Jump_OldMan_003 != null)
-            //audioSource.PlayOneShot(SFX_Jump_OldMan_003, 0.7f);
 
         originalHeight = bodyCollider.size.y;
 
@@ -74,60 +73,38 @@ public class Player : MonoBehaviour
         moveAction = inputActions.FindAction("Move");
         jumpAction = inputActions.FindAction("Jump");
         interactAction = inputActions.FindAction("Interact");
-
-        //pausePlayerAction = inputActions.FindActionMap("Player").FindAction("Pause");
-        //pauseUIAction = inputActions.FindActionMap("UI").FindAction("Pause");
+        attackAction = inputActions.FindAction("Attack");
 
         //Events
         jumpAction.performed += Jump;
         interactAction.started += InteractPressed;
-        //pausePlayerAction.performed += TogglePause;
-        //pauseUIAction.performed += TogglePause;
+        attackAction.performed += Attack;
         score = 0;
     }
-
-    /*public void TogglePause(InputAction.CallbackContext context)
-    {
-        if (Time.timeScale == 0f)
-            OnUnpause();
-        else
-            OnPause();
-    }
-
-    void OnPause()
-    {
-        Time.timeScale = 0f;
-
-        paused_Panel.SetActive(true);
-        option_Panel.SetActive(false);
-
-        //Player Action Map deaktivieren → UI aktiviert
-        inputActions.FindActionMap("Player").Disable();
-        inputActions.FindActionMap("UI").Enable();
-    }
-
-    void OnUnpause()
-    {
-        Time.timeScale = 1f;
-
-        paused_Panel.SetActive(false);
-        option_Panel.SetActive(false);
-
-        //Player Actions wieder aktivieren
-        inputActions.FindActionMap("UI").Enable();
-        inputActions.FindActionMap("Player").Enable();
-
-    }*/
 
     void OnDestroy()
     {
         jumpAction.performed -= Jump;
         interactAction.started -= InteractPressed;
-        //pausePlayerAction.performed -= TogglePause;
-        //pauseUIAction.performed -= TogglePause;
+        attackAction.performed -= Attack;
     }
 
-    //Input
+    public void Attack(InputAction.CallbackContext ctx)
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if (enemy.CompareTag(enemyTag))
+            {
+                Destroy(enemy.gameObject);
+                score += 20;
+                playerScore.text = score.ToString();
+            }
+        }
+        animator.SetTrigger("Attack");
+    }
+
     public void InteractPressed(InputAction.CallbackContext ctx)
     {
         currentInteractable?.Interact();
@@ -135,9 +112,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        //Bewegung
         Vector2 movement = moveAction.ReadValue<Vector2>();
-        //moveInput = movement.x;
         moveInput = 1f;
 
         animator.SetFloat("xSpeed", Mathf.Abs(rb.linearVelocity.x));
@@ -145,7 +120,7 @@ public class Player : MonoBehaviour
         animator.SetBool("isGrounded", isGrounded);
         animator.SetBool("isCrouching", isCrouching);
 
-        // Ducken mit Input-Methode
+        //Ducken Input-Methode
         if (UnityEngine.Input.GetKey(KeyCode.LeftControl))
         {
             if (!isCrouching)
@@ -164,19 +139,17 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         //Bodencheck
-        
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
         if (!wasGrounded && isGrounded)
         {
             jumpsRemaining = maxJumps;
         }
+        wasGrounded = isGrounded;
 
         //Bewegung
         float speed = isCrouching ? moveSpeed * 0.7f : moveSpeed;
         rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
-
-        
     }
 
     public void Jump(InputAction.CallbackContext ctx)
@@ -185,17 +158,14 @@ public class Player : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             jumpsRemaining--;
-            //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_Jump_OldMan");
-            
         }
     }
 
-    //Trigger 2D
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("counter"))
         {
-            score += 5;
+            score += 10;
             playerScore.text = score.ToString();
             Debug.Log(other.name);
         }
@@ -203,14 +173,24 @@ public class Player : MonoBehaviour
         {
             Interactable inter = other.GetComponent<Interactable>();
             if (inter != null)
-                currentInteractable = inter; 
+                currentInteractable = inter;
         }
-        
     }
 
     public void OnTriggerExit2D(Collider2D other)
     {
         currentInteractable = null;
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (attackPoint != null)
+        {
+#if UNITY_EDITOR
+            Handles.color = Color.red;
+            Handles.DrawWireDisc(attackPoint.position, Vector3.forward, attackRange);
+#endif
+        }
     }
 
 
