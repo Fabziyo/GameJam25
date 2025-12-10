@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b7bdcc13-a0d4-4f25-a90a-b60a962834a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam25/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam25/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Restart2Killbox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Restart2Killbox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CanvasLevel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/CanvasLevel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CanvasMenu.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CanvasMenu.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Music.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Music.prefab.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,12 +24,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Code/LeaderboardManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/OnSelectLoadScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/PauseScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/PlayerScore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/SelectOnBack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/SelectOnEnable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/SettingsScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/SubmitScore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/retryButton.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -135,7 +143,7 @@
       <workItem from="1765301024956" duration="1281000" />
       <workItem from="1765302823545" duration="462000" />
       <workItem from="1765370325411" duration="882000" />
-      <workItem from="1765372577176" duration="716000" />
+      <workItem from="1765372577176" duration="5344000" />
     </task>
     <servers />
   </component>

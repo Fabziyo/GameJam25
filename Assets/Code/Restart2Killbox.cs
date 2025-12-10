@@ -1,10 +1,15 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class Restart2Killbox : MonoBehaviour
 {
+    [Header("GameoverUI")]
     public GameObject LeaderboardUi;
     public GameObject LeaderboardManager;
+    public GameObject IngameUI;
+    public GameObject PauseScreen;
+    public PlayerInput input;
 
     [Header("Killbox Tracking")]
     public GameObject Killbox; 
@@ -38,8 +43,11 @@ public class Restart2Killbox : MonoBehaviour
         if (collision.gameObject.CompareTag("Killbox"))
         {
             Time.timeScale = 0f;
+            input.SwitchCurrentActionMap("UI");
             LeaderboardUi.SetActive(true);
             LeaderboardManager.SetActive(true);
+            IngameUI.SetActive(false);
+            PauseScreen.SetActive(false);
         }
     }
 }
