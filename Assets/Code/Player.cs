@@ -140,6 +140,11 @@ public class Player : MonoBehaviour
         moveInput = movement.x;
         //moveInput = 1f;
 
+        animator.SetFloat("xSpeed", Mathf.Abs(rb.linearVelocity.x));
+        animator.SetFloat("yAchse", rb.linearVelocity.y);
+        animator.SetBool("isGrounded", isGrounded);
+        animator.SetBool("isCrouching", isCrouching);
+
         // Ducken mit Input-Methode
         if (UnityEngine.Input.GetKey(KeyCode.LeftControl))
         {
