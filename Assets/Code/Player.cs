@@ -137,8 +137,8 @@ public class Player : MonoBehaviour
     {
         //Bewegung
         Vector2 movement = moveAction.ReadValue<Vector2>();
-        moveInput = movement.x;
-        //moveInput = 1f;
+        //moveInput = movement.x;
+        moveInput = 1f;
 
         animator.SetFloat("xSpeed", Mathf.Abs(rb.linearVelocity.x));
         animator.SetFloat("yAchse", rb.linearVelocity.y);
@@ -173,7 +173,7 @@ public class Player : MonoBehaviour
         }
 
         //Bewegung
-        float speed = isCrouching ? moveSpeed * 0.5f : moveSpeed;
+        float speed = isCrouching ? moveSpeed * 0.7f : moveSpeed;
         rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
 
         
