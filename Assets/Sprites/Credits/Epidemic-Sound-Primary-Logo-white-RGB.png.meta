@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 43c1c7783a9ac4c4b906929b3927ec04
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7303204930755300163
+    second: Epidemic-Sound-Primary-Logo-white-RGB_0
+  - first:
+      213: 9181620263607129098
+    second: Epidemic-Sound-Primary-Logo-white-RGB_1
+  - first:
+      213: 2855870868367634763
+    second: Epidemic-Sound-Primary-Logo-white-RGB_2
+  - first:
+      213: 9006495837747996946
+    second: Epidemic-Sound-Primary-Logo-white-RGB_3
+  - first:
+      213: -5399668920102656531
+    second: Epidemic-Sound-Primary-Logo-white-RGB_4
+  - first:
+      213: -3072712916262392918
+    second: Epidemic-Sound-Primary-Logo-white-RGB_5
+  - first:
+      213: -5094958777932288661
+    second: Epidemic-Sound-Primary-Logo-white-RGB_6
+  - first:
+      213: -4698362089091591257
+    second: Epidemic-Sound-Primary-Logo-white-RGB_7
+  - first:
+      213: -3141669229712023247
+    second: Epidemic-Sound-Primary-Logo-white-RGB_8
+  - first:
+      213: 4459880986365641629
+    second: Epidemic-Sound-Primary-Logo-white-RGB_9
+  - first:
+      213: 3800949405783265597
+    second: Epidemic-Sound-Primary-Logo-white-RGB_10
+  - first:
+      213: 6619124624001142725
+    second: Epidemic-Sound-Primary-Logo-white-RGB_11
+  - first:
+      213: -3948154000486583013
+    second: Epidemic-Sound-Primary-Logo-white-RGB_12
+  - first:
+      213: -4388682393247995944
+    second: Epidemic-Sound-Primary-Logo-white-RGB_13
+  - first:
+      213: -2347337832576674529
+    second: Epidemic-Sound-Primary-Logo-white-RGB_14
+  - first:
+      213: 2815018155499092545
+    second: Epidemic-Sound-Primary-Logo-white-RGB_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 129
+        width: 388
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4f27c3fcdc5aa90800000000000000
+      internalID: -7303204930755300163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_1
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 129
+        width: 306
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a04d4d2cbfaab6f70800000000000000
+      internalID: 9181620263607129098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_2
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 522
+        width: 84
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4170797c6712a720800000000000000
+      internalID: 2855870868367634763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_3
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 123
+        width: 331
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 219e008fe308dfc70800000000000000
+      internalID: 9006495837747996946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_4
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 522
+        width: 85
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de56090d9b58015b0800000000000000
+      internalID: -5399668920102656531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_5
+      rect:
+        serializedVersion: 2
+        x: 3296
+        y: 122
+        width: 359
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aabec61f1e78b55d0800000000000000
+      internalID: -3072712916262392918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_6
+      rect:
+        serializedVersion: 2
+        x: 4751
+        y: 123
+        width: 331
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d66185cf11b49b0800000000000000
+      internalID: -5094958777932288661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_7
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 0
+        width: 331
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3988da2901cceb0800000000000000
+      internalID: -4698362089091591257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_8
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 129
+        width: 85
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1316d391b7c8664d0800000000000000
+      internalID: -3141669229712023247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_9
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 122
+        width: 326
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93c7dca02ea4ed30800000000000000
+      internalID: 4459880986365641629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_10
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 129
+        width: 492
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3191f4a85fafb430800000000000000
+      internalID: 3800949405783265597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_11
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 129
+        width: 85
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf01a1a6cadbdb50800000000000000
+      internalID: 6619124624001142725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_12
+      rect:
+        serializedVersion: 2
+        x: 2834
+        y: 122
+        width: 318
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15b572dad65539c0800000000000000
+      internalID: -3948154000486583013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_13
+      rect:
+        serializedVersion: 2
+        x: 3678
+        y: 122
+        width: 336
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d721769d944813c0800000000000000
+      internalID: -4388682393247995944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_14
+      rect:
+        serializedVersion: 2
+        x: 4049
+        y: 124
+        width: 306
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f159e619da49c6fd0800000000000000
+      internalID: -2347337832576674529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Epidemic-Sound-Primary-Logo-white-RGB_15
+      rect:
+        serializedVersion: 2
+        x: 4407
+        y: 129
+        width: 308
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a7cca0914f01720800000000000000
+      internalID: 2815018155499092545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Epidemic-Sound-Primary-Logo-white-RGB_0: -7303204930755300163
+      Epidemic-Sound-Primary-Logo-white-RGB_1: 9181620263607129098
+      Epidemic-Sound-Primary-Logo-white-RGB_10: 3800949405783265597
+      Epidemic-Sound-Primary-Logo-white-RGB_11: 6619124624001142725
+      Epidemic-Sound-Primary-Logo-white-RGB_12: -3948154000486583013
+      Epidemic-Sound-Primary-Logo-white-RGB_13: -4388682393247995944
+      Epidemic-Sound-Primary-Logo-white-RGB_14: -2347337832576674529
+      Epidemic-Sound-Primary-Logo-white-RGB_15: 2815018155499092545
+      Epidemic-Sound-Primary-Logo-white-RGB_2: 2855870868367634763
+      Epidemic-Sound-Primary-Logo-white-RGB_3: 9006495837747996946
+      Epidemic-Sound-Primary-Logo-white-RGB_4: -5399668920102656531
+      Epidemic-Sound-Primary-Logo-white-RGB_5: -3072712916262392918
+      Epidemic-Sound-Primary-Logo-white-RGB_6: -5094958777932288661
+      Epidemic-Sound-Primary-Logo-white-RGB_7: -4698362089091591257
+      Epidemic-Sound-Primary-Logo-white-RGB_8: -3141669229712023247
+      Epidemic-Sound-Primary-Logo-white-RGB_9: 4459880986365641629
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
