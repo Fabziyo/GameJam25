@@ -10,6 +10,7 @@ public class retryButton : MonoBehaviour
     {
        retry.onClick.AddListener(() =>
            {
+               Restart2Killbox.isDead = false;
                Time.timeScale = 1;
                SceneManager.LoadScene("SampleScene");
            }); 

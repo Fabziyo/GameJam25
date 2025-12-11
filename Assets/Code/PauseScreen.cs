@@ -21,10 +21,11 @@ public class PauseScreen : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        input.actions.FindActionMap("Player").FindAction("Pause").performed -= TogglePause;
+        input.actions.FindActionMap("UI").FindAction("Pause").performed -= TogglePause;
+        
         mainMenuButton.onClick.AddListener(() =>
         {
-            input.actions.FindActionMap("Player").FindAction("Pause").performed -= TogglePause;
-            input.actions.FindActionMap("UI").FindAction("Pause").performed -= TogglePause;
             SceneManager.LoadScene("MainMenu");
             //AudioSystem.instance.musicEmitter.EventInstance.setParameterByNameWithLabel("LevelSwitch2", "Menu");
         });
@@ -48,10 +49,13 @@ public class PauseScreen : MonoBehaviour
 
     private void TogglePause(InputAction.CallbackContext obj)
     {
-        if(Time.timeScale == 0f)
-            OnUnpause();
-        else
-            OnPause();
+        if (!Restart2Killbox.isDead)
+        {
+            if(Time.timeScale == 0f)
+                OnUnpause();
+            else
+                OnPause();
+        }
     }
     void OnPause()
     {
