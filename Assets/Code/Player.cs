@@ -147,7 +147,7 @@ public class Player : MonoBehaviour
         animator.SetBool("isGrounded", isGrounded);
         animator.SetBool("isCrouching", isCrouching);
 
-        //Ducken Input-Methode
+        //Ducken
         if (UnityEngine.Input.GetKey(KeyCode.LeftControl))
         {
             if (!isCrouching)
