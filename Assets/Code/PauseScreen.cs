@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -23,9 +24,10 @@ public class PauseScreen : MonoBehaviour
     {
         input.actions.FindActionMap("Player").FindAction("Pause").performed -= TogglePause;
         input.actions.FindActionMap("UI").FindAction("Pause").performed -= TogglePause;
-        
         mainMenuButton.onClick.AddListener(() =>
         {
+            input.actions.FindActionMap("Player").FindAction("Pause").performed -= TogglePause;
+            input.actions.FindActionMap("UI").FindAction("Pause").performed -= TogglePause;
             SceneManager.LoadScene("MainMenu");
             //AudioSystem.instance.musicEmitter.EventInstance.setParameterByNameWithLabel("LevelSwitch2", "Menu");
         });
@@ -49,31 +51,41 @@ public class PauseScreen : MonoBehaviour
 
     private void TogglePause(InputAction.CallbackContext obj)
     {
-        if (!Restart2Killbox.isDead)
-        {
-            if(Time.timeScale == 0f)
-                OnUnpause();
-            else
-                OnPause();
-        }
+        if (Time.timeScale == 0f)
+            OnUnpause();
+        else
+            OnPause();
     }
     void OnPause()
     {
         Time.timeScale = 0f;
         Cursor.visible = true;
-        input.SwitchCurrentActionMap("UI");
+        //input.SwitchCurrentActionMap("UI");
+        StartCoroutine(SwitchToUI());
         panel.SetActive(true);
         settingsPanel.SetActive(false);
         controlsPanel.SetActive(false);
+    }
+    IEnumerator SwitchToUI()
+    {
+        yield return null; // 1 Frame warten
+        input.SwitchCurrentActionMap("UI");
     }
 
     void OnUnpause()
     {
         Time.timeScale = 1f;
-        input.SwitchCurrentActionMap("Player");
+        StartCoroutine(SwitchToPlayer());
+        //input.SwitchCurrentActionMap("Player");
         Cursor.visible = false;
         panel.SetActive(false);
         settingsPanel.SetActive(false);
         controlsPanel.SetActive(false);
+    }
+    
+    IEnumerator SwitchToPlayer()
+    {
+        yield return null;
+        input.SwitchCurrentActionMap("Player");
     }
 }

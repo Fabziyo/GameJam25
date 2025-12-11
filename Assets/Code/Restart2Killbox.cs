@@ -17,8 +17,10 @@ public class Restart2Killbox : MonoBehaviour
     public Transform PlayerTransform; 
 
     public bool isTracking = false;
-    public static bool isDead;
+    
 
+
+   
     void Update()
     {
         
@@ -47,7 +49,6 @@ public class Restart2Killbox : MonoBehaviour
             RuntimeManager.PlayOneShot("event:/SFX/SFX_Player-Death");
             Cursor.visible = true;
             Time.timeScale = 0f;
-            isDead = true;
             input.SwitchCurrentActionMap("UI");
             LeaderboardUi.SetActive(true);
             LeaderboardManager.SetActive(true);

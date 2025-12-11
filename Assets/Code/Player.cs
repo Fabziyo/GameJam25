@@ -70,6 +70,8 @@ public class Player : MonoBehaviour
     [Header("Sounds")]
     public float footstepInterval = 0.4f;
     private float footstepTimer = 0f;
+    
+    public PlayerInput input;
 
     void Start()
     {
@@ -98,6 +100,8 @@ public class Player : MonoBehaviour
 
         rb.gravityScale = normalGravityScale;
         score = 0;
+        input.ActivateInput();
+        input.SwitchCurrentActionMap("Player");
     }
 
     void OnDestroy()
@@ -107,6 +111,7 @@ public class Player : MonoBehaviour
         attackAction.performed -= Attack;
         sinkAction.performed -= OnSinkStarted;
         sinkAction.canceled -= OnSinkEnded;
+        StopAllCoroutines();
     }
 
     public void OnSinkStarted(InputAction.CallbackContext ctx)

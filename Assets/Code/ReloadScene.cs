@@ -25,7 +25,6 @@ public class ReloadScene : MonoBehaviour
     
     public void ReloadScene2()
     {
-        Restart2Killbox.isDead = false;
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.buildIndex);
     }
