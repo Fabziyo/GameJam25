@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using FMODUnity;
+using TMPro;
 using Unity.Cinemachine;
 using UnityEditor;
 using UnityEngine;
@@ -219,6 +220,8 @@ public class Player : MonoBehaviour
 #endif
         }
     }
+    
+    
 
 
 }

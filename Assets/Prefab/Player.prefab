@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 1927821637643926325}
   - component: {fileID: 1936687541681620929}
   - component: {fileID: 9221921187742965484}
+  - component: {fileID: 3942173982987507094}
   m_Layer: 0
   m_Name: Scientist
   m_TagString: Untagged
@@ -220,6 +221,37 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3942173982987507094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3581114583269666875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1687727289
+      Data2: 1305801771
+      Data3: 1341348527
+      Data4: 1867928431
+    Path: event:/SFX/SFX_Footsteps
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &3731499239226370720
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +743,15 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  attackAction:
+    m_Name: Attack
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 2730fe17-73f4-4121-8d62-b0ae0fc48b66
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   pausePlayerAction:
     m_Name: Pause Player
     m_Type: 0
@@ -729,12 +770,27 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  sinkAction:
+    m_Name: Sink
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 6ce33cc3-d81b-4172-9396-37e781748397
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   animator: {fileID: 0}
   rb: {fileID: 9139367897244049499}
   moveSpeed: 5
   jumpForce: 7
   groundCheckRadius: 0.15
   crouchHeight: 1
+  attackPoint: {fileID: 0}
+  attackRange: 1.5
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  enemyTag: Enemy
   isGrounded: 0
   canJump: 1
   wasGrounded: 0
@@ -747,6 +803,8 @@ MonoBehaviour:
     m_Bits: 8
   bodyCollider: {fileID: 1338035139398701260}
   maxJumps: 1
+  normalGravityScale: 1
+  sinkGravityScale: 3
   paused_Panel: {fileID: 0}
   option_Panel: {fileID: 0}
   cinemachineController: {fileID: 0}
@@ -826,6 +884,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LeaderboardUi: {fileID: 0}
   LeaderboardManager: {fileID: 0}
+  IngameUI: {fileID: 0}
+  PauseScreen: {fileID: 0}
+  input: {fileID: 0}
   Killbox: {fileID: 0}
   PlayerTransform: {fileID: 2715933623400892392}
   isTracking: 1

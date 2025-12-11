@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b7bdcc13-a0d4-4f25-a90a-b60a962834a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam25/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam25/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/OnSelectLoadScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/OnSelectLoadScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CanvasLevel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/CanvasLevel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Player/Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Run.anim" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +163,8 @@
       <workItem from="1765463482807" duration="459000" />
       <workItem from="1765467405833" duration="958000" />
       <workItem from="1765471173914" duration="810000" />
-      <workItem from="1765472401169" duration="365000" />
+      <workItem from="1765472401169" duration="444000" />
+      <workItem from="1765472944814" duration="1463000" />
     </task>
     <servers />
   </component>
