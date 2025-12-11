@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7bdcc13-a0d4-4f25-a90a-b60a962834a0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CanvasLevel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/CanvasLevel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-    </list>
+    <list default="true" id="b7bdcc13-a0d4-4f25-a90a-b60a962834a0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,6 +140,7 @@
       <workItem from="1765381958181" duration="33000" />
       <workItem from="1765382712325" duration="712000" />
       <workItem from="1765384898877" duration="488000" />
+      <workItem from="1765463361881" duration="103000" />
     </task>
     <servers />
   </component>
