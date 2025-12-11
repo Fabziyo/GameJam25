@@ -8,6 +8,7 @@ public class EnemyMoving : MonoBehaviour
 
     private Vector3 startPos;
     private Rigidbody2D rb;
+    public Animator animator;
 
     void Start()
     {
