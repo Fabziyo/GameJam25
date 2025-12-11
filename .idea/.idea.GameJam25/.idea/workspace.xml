@@ -6,15 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b7bdcc13-a0d4-4f25-a90a-b60a962834a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam25/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam25/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/PauseScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/PauseScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/ReloadScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/ReloadScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Restart2Killbox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Restart2Killbox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/retryButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/retryButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/OnSelectLoadScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/OnSelectLoadScene.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/CanvasLevel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/CanvasLevel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CanvasMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/CanvasMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +57,18 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Microbial-Messiah\Microbial Messiah.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="E:\htk-academy\Unity\GameJam\Semester2\Microbial-Messiah" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="E:\Program Files\Unity\Hub\Editor\6000.0.58f2\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath E:\htk-academy\Unity\GameJam\Semester2\GameJam25 -debugCodeOptimization" />
@@ -156,6 +164,7 @@
       <workItem from="1765463482807" duration="459000" />
       <workItem from="1765467405833" duration="958000" />
       <workItem from="1765471173914" duration="810000" />
+      <workItem from="1765472401169" duration="365000" />
     </task>
     <servers />
   </component>

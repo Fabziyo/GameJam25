@@ -8,6 +8,7 @@ public class OnSelectLoadScene : MonoBehaviour
     public Button button;
     public string sceneName;
     public bool setTimeNormal;
+    public bool resetMusic;
 
     void Start()
     {
@@ -16,6 +17,11 @@ public class OnSelectLoadScene : MonoBehaviour
             if (setTimeNormal)
             {
                 Time.timeScale = 1;
+            }
+
+            if (resetMusic)
+            {
+                
             }
             SceneManager.LoadScene(sceneName);
         }); 
