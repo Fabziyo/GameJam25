@@ -66,6 +66,10 @@ public class Player : MonoBehaviour
     [Header("ScoreCounter")]
     public TextMeshProUGUI playerScore;
     public static int score;
+    
+    [Header("Sounds")]
+    public float footstepInterval = 0.4f;
+    private float footstepTimer = 0f;
 
     void Start()
     {
@@ -120,12 +124,14 @@ public class Player : MonoBehaviour
     public void Attack(InputAction.CallbackContext ctx)
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        RuntimeManager.PlayOneShot("event:/SFX/SFX_Attack");
 
         foreach (Collider2D enemy in hitEnemies)
         {
             if (enemy.CompareTag(enemyTag))
             {
                 Destroy(enemy.gameObject);
+                RuntimeManager.PlayOneShot("event:/SFX/SFX_Bacteria-Death");
                 score += 30;
                 playerScore.text = score.ToString();
             }
@@ -146,6 +152,16 @@ public class Player : MonoBehaviour
         animator.SetFloat("xSpeed", Mathf.Abs(rb.linearVelocity.x));
         animator.SetFloat("yAchse", rb.linearVelocity.y);
         animator.SetBool("isGrounded", isGrounded);
+        if (isGrounded && Mathf.Abs(rb.linearVelocity.x) > 0.1f)
+        {
+            footstepTimer -= Time.deltaTime;
+
+            if (footstepTimer <= 0f)
+            {
+                RuntimeManager.PlayOneShot("event:/SFX/SFX_Footsteps");
+                footstepTimer = footstepInterval;
+            }
+        }
         animator.SetBool("isCrouching", isCrouching);
 
         //Ducken
@@ -186,6 +202,7 @@ public class Player : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             jumpsRemaining--;
+            RuntimeManager.PlayOneShot("event:/SFX/SFX_Jump_OldMan");
         }
     }
 

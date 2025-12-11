@@ -430,69 +430,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1485961948
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1485961950}
-  - component: {fileID: 1485961949}
-  m_Layer: 0
-  m_Name: Atmo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1485961949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485961948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
---- !u!4 &1485961950
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485961948}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3407820574051365041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1623,8 +1560,24 @@ PrefabInstance:
       value: Music
       objectReference: {fileID: 0}
     - target: {fileID: 3575834156896972206, guid: 06be6cceeabc16d4ca7c2c9c3849a86e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575834156896972206, guid: 06be6cceeabc16d4ca7c2c9c3849a86e, type: 3}
+      propertyPath: EventPlayTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575834156896972206, guid: 06be6cceeabc16d4ca7c2c9c3849a86e, type: 3}
+      propertyPath: EventStopTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575834156896972206, guid: 06be6cceeabc16d4ca7c2c9c3849a86e, type: 3}
+      propertyPath: Params.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575834156896972206, guid: 06be6cceeabc16d4ca7c2c9c3849a86e, type: 3}
       propertyPath: EventReference.Path
-      value: event:/ES_K.O. - Lupus Nocte
+      value: event:/Music/ES_K.O. - Lupus Nocte
       objectReference: {fileID: 0}
     - target: {fileID: 3575834156896972206, guid: 06be6cceeabc16d4ca7c2c9c3849a86e, type: 3}
       propertyPath: OverrideMaxDistance
@@ -1649,6 +1602,14 @@ PrefabInstance:
     - target: {fileID: 3575834156896972206, guid: 06be6cceeabc16d4ca7c2c9c3849a86e, type: 3}
       propertyPath: EventReference.Guid.Data4
       value: -409073582
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575834156896972206, guid: 06be6cceeabc16d4ca7c2c9c3849a86e, type: 3}
+      propertyPath: Params.Array.data[0].Name
+      value: LevelSwitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575834156896972206, guid: 06be6cceeabc16d4ca7c2c9c3849a86e, type: 3}
+      propertyPath: Params.Array.data[0].Value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5515159982950057690, guid: 06be6cceeabc16d4ca7c2c9c3849a86e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1704,4 +1665,3 @@ SceneRoots:
   - {fileID: 3407820574051365041}
   - {fileID: 1142783935}
   - {fileID: 3708410696668704030}
-  - {fileID: 1485961950}

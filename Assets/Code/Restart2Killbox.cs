@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -43,6 +44,7 @@ public class Restart2Killbox : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Killbox"))
         {
+            RuntimeManager.PlayOneShot("event:/SFX/SFX_Player-Death");
             Cursor.visible = true;
             Time.timeScale = 0f;
             isDead = true;

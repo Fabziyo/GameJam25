@@ -14,6 +14,7 @@ public class AudioSystem : MonoBehaviour
             if (musicStarted)
             {
                 Destroy(gameObject);
+                return;
             }
             DontDestroyOnLoad(gameObject);
             musicEmitter.Play();
@@ -21,3 +22,5 @@ public class AudioSystem : MonoBehaviour
             instance = this;
         }
 }
+
+
