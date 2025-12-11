@@ -54,6 +54,78 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 162
+--- !u!114 &-4681094295387284622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ES_K.O. - Lupus Nocte/LevelSwitch
+  m_EditorClassIdentifier: 
+  Name: LevelSwitch
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3451744260
+    data2: 1351814481
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Ingame-1
+  - Menu
+  Exists: 1
+--- !u!114 &-2891318767752258443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ES_K.O. - Lupus Nocte
+  m_EditorClassIdentifier: 
+  Path: event:/ES_K.O. - Lupus Nocte
+  Guid:
+    Data1: -1023757871
+    Data2: 1121940891
+    Data3: 1204933801
+    Data4: -409073582
+  Banks:
+  - {fileID: -1796265472744474197}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -4681094295387284622}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 304442
+--- !u!114 &-1796265472744474197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 639010691960092372
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-1026382634885999681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +141,7 @@ MonoBehaviour:
   Path: Assets/Audio/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639008882286280256
+  lastModified: 639010691959771261
   FileSizes: []
   Exists: 1
 --- !u!114 &-57764220317432708
@@ -116,6 +188,7 @@ MonoBehaviour:
   - {fileID: -1026382634885999681}
   - {fileID: 2244178830780964348}
   - {fileID: 1007321574951973790}
+  - {fileID: -1796265472744474197}
   EditorEvents:
   - {fileID: 1235275884899878488}
   - {fileID: -6214121806235219006}
@@ -124,13 +197,14 @@ MonoBehaviour:
   - {fileID: -6314371029450166442}
   - {fileID: -57764220317432708}
   - {fileID: 3411700805998564849}
+  - {fileID: -2891318767752258443}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1026382634885999681}
   StringsBanks:
   - {fileID: 8416500994532224346}
   cacheVersion: 131848
-  cacheTime: 639008882286643495
+  cacheTime: 639010691960092372
   SerializableEventsDict:
   - key: event:/SFX/SFX_Jump_OldMan
     index: 0
@@ -146,6 +220,8 @@ MonoBehaviour:
     index: 5
   - key: event:/UI/SFX_Buttons
     index: 6
+  - key: event:/ES_K.O. - Lupus Nocte
+    index: 7
 --- !u!114 &1007321574951973790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,8 +381,8 @@ MonoBehaviour:
   Path: Assets/Audio/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639008882286359809
+  lastModified: 639010691959855262
   FileSizes:
   - Name: 
-    Value: 1534
+    Value: 1686
   Exists: 1
