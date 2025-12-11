@@ -3689,6 +3689,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 497009459308491892, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: GroundPrefab.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 497009459308491892, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: 'GroundPrefab.Array.data[5]'
+      value: 
+      objectReference: {fileID: 295872223749515253, guid: 2d07ee95b9a56b84ea87880c73e3df38, type: 3}
+    - target: {fileID: 497009459308491892, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: 'GroundPrefab.Array.data[6]'
+      value: 
+      objectReference: {fileID: 4217023818819076332, guid: 9e11cd4490cc2b54eac36167a47b0e4b, type: 3}
+    - target: {fileID: 497009459308491892, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: 'GroundPrefab.Array.data[7]'
+      value: 
+      objectReference: {fileID: 6772018114018609704, guid: b93ac1cb6187aac49bc3138a7b37978b, type: 3}
+    - target: {fileID: 497009459308491892, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: 'GroundPrefab.Array.data[8]'
+      value: 
+      objectReference: {fileID: 2634022954872288302, guid: b5ddc5fa311d9bb41a2d74278bedbd62, type: 3}
     - target: {fileID: 734358978945671376, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: LeaderboardUi
       value: 
@@ -3823,11 +3843,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: jumpForce
-      value: 8.5
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: moveSpeed
-      value: 4
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: attackPoint
@@ -3835,7 +3855,7 @@ PrefabInstance:
       objectReference: {fileID: 1039578321}
     - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: attackRange
-      value: 0.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: playerScore
@@ -3872,6 +3892,14 @@ PrefabInstance:
     - target: {fileID: 7685266222075928399, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: m_ContactCaptureLayers.m_Bits
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139367897244049499, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: m_Mass
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139367897244049499, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: m_GravityScale
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4714,7 +4742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 70983980139464835, guid: 5114f166db203824fa2bd5013ac6c94e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.3699999
+      value: 2.098
       objectReference: {fileID: 0}
     - target: {fileID: 70983980139464835, guid: 5114f166db203824fa2bd5013ac6c94e, type: 3}
       propertyPath: m_AnchoredPosition.y

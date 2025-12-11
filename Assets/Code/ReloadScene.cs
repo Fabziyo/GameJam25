@@ -11,7 +11,7 @@ public class ReloadScene : MonoBehaviour
         }
     }
 
-    // Diese Funktion kannst du auch im Button-OnClick zuweisen
+    
     public void ReloadScene2()
     {
         Scene currentScene = SceneManager.GetActiveScene();

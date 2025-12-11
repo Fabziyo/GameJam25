@@ -98,7 +98,7 @@ public class Player : MonoBehaviour
             if (enemy.CompareTag(enemyTag))
             {
                 Destroy(enemy.gameObject);
-                score += 20;
+                score += 30;
                 playerScore.text = score.ToString();
             }
         }
@@ -165,7 +165,7 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("counter"))
         {
-            score += 10;
+            score += 20;
             playerScore.text = score.ToString();
             Debug.Log(other.name);
         }
