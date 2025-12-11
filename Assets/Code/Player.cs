@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     public InputAction attackAction;
     public InputAction pausePlayerAction;
     public InputAction pauseUIAction;
+    public InputAction sinkAction;
+
 
     [Header("Player")]
 
@@ -49,6 +51,11 @@ public class Player : MonoBehaviour
     public int maxJumps = 1;
     private int jumpsRemaining;
 
+    [Header("Fast Fall")]
+    public float normalGravityScale = 1f;
+    public float sinkGravityScale = 3f;
+    private bool isSinking;
+
     [Header("Object")]
     public GameObject paused_Panel;
     public GameObject option_Panel;
@@ -74,11 +81,17 @@ public class Player : MonoBehaviour
         jumpAction = inputActions.FindAction("Jump");
         interactAction = inputActions.FindAction("Interact");
         attackAction = inputActions.FindAction("Attack");
+        sinkAction = inputActions.FindAction("Sink");
+
 
         //Events
         jumpAction.performed += Jump;
         interactAction.started += InteractPressed;
         attackAction.performed += Attack;
+        sinkAction.performed += OnSinkStarted;
+        sinkAction.canceled += OnSinkEnded;
+
+        rb.gravityScale = normalGravityScale;
         score = 0;
     }
 
@@ -87,6 +100,20 @@ public class Player : MonoBehaviour
         jumpAction.performed -= Jump;
         interactAction.started -= InteractPressed;
         attackAction.performed -= Attack;
+        sinkAction.performed -= OnSinkStarted;
+        sinkAction.canceled -= OnSinkEnded;
+    }
+
+    public void OnSinkStarted(InputAction.CallbackContext ctx)
+    {
+        isSinking = true;
+        rb.gravityScale = sinkGravityScale;
+    }
+
+    public void OnSinkEnded(InputAction.CallbackContext ctx)
+    {
+        isSinking = false;
+        rb.gravityScale = normalGravityScale;
     }
 
     public void Attack(InputAction.CallbackContext ctx)

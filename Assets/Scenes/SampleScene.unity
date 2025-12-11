@@ -3095,8 +3095,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: sinkGravityScale
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: sinkAction.m_Name
+      value: Sink
+      objectReference: {fileID: 0}
+    - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: enemyLayers.m_Bits
       value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
+      propertyPath: normalGravityScale
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5939430162335706418, guid: cc637f2725e6f514cab634c1c66e27d6, type: 3}
       propertyPath: attackAction.m_Name
