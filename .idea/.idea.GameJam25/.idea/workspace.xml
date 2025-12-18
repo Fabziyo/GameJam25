@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7bdcc13-a0d4-4f25-a90a-b60a962834a0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam25/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam25/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/PauseScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/PauseScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/ReloadScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/ReloadScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Restart2Killbox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Restart2Killbox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/retryButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/retryButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Desktop/Music.bank" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Desktop/Music.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/OnSelectLoadScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/OnSelectLoadScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +57,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../Microbial-Messiah2\Microbial Messiah.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Microbial-Messiah3\Microbial Messiah.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="E:\htk-academy\Unity\GameJam\Semester2\Microbial-Messiah" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -170,7 +167,7 @@
       <workItem from="1765472944814" duration="1463000" />
       <workItem from="1765475438809" duration="625000" />
       <workItem from="1765476479678" duration="1805000" />
-      <workItem from="1765478684208" duration="1317000" />
+      <workItem from="1765478684208" duration="4066000" />
     </task>
     <servers />
   </component>

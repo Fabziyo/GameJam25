@@ -17,6 +17,7 @@ public class OnSelectLoadScene : MonoBehaviour
                 Time.timeScale = 1;
             }
             SceneManager.LoadScene(sceneName);
+            AudioSystem.instance.musicEmitter.EventInstance.setParameterByNameWithLabel("LevelSwitch", "Menu");
         }); 
     }
 }
